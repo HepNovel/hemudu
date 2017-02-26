@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F387B6C1E62DA3F004D5A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F387B6B1E62DA3F004D5A82 /* AppDelegate.swift */; };
+		5F387B6E1E62DA3F004D5A82 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F387B6D1E62DA3F004D5A82 /* RootViewController.swift */; };
+		5F387B701E62DA3F004D5A82 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F387B6F1E62DA3F004D5A82 /* DataViewController.swift */; };
+		5F387B721E62DA3F004D5A82 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F387B711E62DA3F004D5A82 /* ModelController.swift */; };
+		5F387B751E62DA3F004D5A82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F387B731E62DA3F004D5A82 /* Main.storyboard */; };
+		5F387B771E62DA3F004D5A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F387B761E62DA3F004D5A82 /* Assets.xcassets */; };
+		5F387B7A1E62DA3F004D5A82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F387B781E62DA3F004D5A82 /* LaunchScreen.storyboard */; };
+		5F387B851E62DA3F004D5A82 /* hemuduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F387B841E62DA3F004D5A82 /* hemuduTests.swift */; };
+		5F387B901E62DA3F004D5A82 /* hemuduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F387B8F1E62DA3F004D5A82 /* hemuduUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F387B811E62DA3F004D5A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F387B601E62DA3F004D5A82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F387B671E62DA3F004D5A82;
+			remoteInfo = hemudu;
+		};
+		5F387B8C1E62DA3F004D5A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F387B601E62DA3F004D5A82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F387B671E62DA3F004D5A82;
+			remoteInfo = hemudu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F387B681E62DA3F004D5A82 /* hemudu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hemudu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F387B6B1E62DA3F004D5A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F387B6D1E62DA3F004D5A82 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5F387B6F1E62DA3F004D5A82 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		5F387B711E62DA3F004D5A82 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		5F387B741E62DA3F004D5A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F387B761E62DA3F004D5A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F387B791E62DA3F004D5A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F387B7B1E62DA3F004D5A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F387B801E62DA3F004D5A82 /* hemuduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hemuduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F387B841E62DA3F004D5A82 /* hemuduTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hemuduTests.swift; sourceTree = "<group>"; };
+		5F387B861E62DA3F004D5A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F387B8B1E62DA3F004D5A82 /* hemuduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hemuduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F387B8F1E62DA3F004D5A82 /* hemuduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hemuduUITests.swift; sourceTree = "<group>"; };
+		5F387B911E62DA3F004D5A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F387B651E62DA3F004D5A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F387B7D1E62DA3F004D5A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F387B881E62DA3F004D5A82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F387B5F1E62DA3F004D5A82 = {
+			isa = PBXGroup;
+			children = (
+				5F387B6A1E62DA3F004D5A82 /* hemudu */,
+				5F387B831E62DA3F004D5A82 /* hemuduTests */,
+				5F387B8E1E62DA3F004D5A82 /* hemuduUITests */,
+				5F387B691E62DA3F004D5A82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F387B691E62DA3F004D5A82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F387B681E62DA3F004D5A82 /* hemudu.app */,
+				5F387B801E62DA3F004D5A82 /* hemuduTests.xctest */,
+				5F387B8B1E62DA3F004D5A82 /* hemuduUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F387B6A1E62DA3F004D5A82 /* hemudu */ = {
+			isa = PBXGroup;
+			children = (
+				5F387B6B1E62DA3F004D5A82 /* AppDelegate.swift */,
+				5F387B6D1E62DA3F004D5A82 /* RootViewController.swift */,
+				5F387B6F1E62DA3F004D5A82 /* DataViewController.swift */,
+				5F387B711E62DA3F004D5A82 /* ModelController.swift */,
+				5F387B731E62DA3F004D5A82 /* Main.storyboard */,
+				5F387B761E62DA3F004D5A82 /* Assets.xcassets */,
+				5F387B781E62DA3F004D5A82 /* LaunchScreen.storyboard */,
+				5F387B7B1E62DA3F004D5A82 /* Info.plist */,
+			);
+			path = hemudu;
+			sourceTree = "<group>";
+		};
+		5F387B831E62DA3F004D5A82 /* hemuduTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F387B841E62DA3F004D5A82 /* hemuduTests.swift */,
+				5F387B861E62DA3F004D5A82 /* Info.plist */,
+			);
+			path = hemuduTests;
+			sourceTree = "<group>";
+		};
+		5F387B8E1E62DA3F004D5A82 /* hemuduUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F387B8F1E62DA3F004D5A82 /* hemuduUITests.swift */,
+				5F387B911E62DA3F004D5A82 /* Info.plist */,
+			);
+			path = hemuduUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F387B671E62DA3F004D5A82 /* hemudu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F387B941E62DA3F004D5A82 /* Build configuration list for PBXNativeTarget "hemudu" */;
+			buildPhases = (
+				5F387B641E62DA3F004D5A82 /* Sources */,
+				5F387B651E62DA3F004D5A82 /* Frameworks */,
+				5F387B661E62DA3F004D5A82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hemudu;
+			productName = hemudu;
+			productReference = 5F387B681E62DA3F004D5A82 /* hemudu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F387B7F1E62DA3F004D5A82 /* hemuduTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F387B971E62DA3F004D5A82 /* Build configuration list for PBXNativeTarget "hemuduTests" */;
+			buildPhases = (
+				5F387B7C1E62DA3F004D5A82 /* Sources */,
+				5F387B7D1E62DA3F004D5A82 /* Frameworks */,
+				5F387B7E1E62DA3F004D5A82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F387B821E62DA3F004D5A82 /* PBXTargetDependency */,
+			);
+			name = hemuduTests;
+			productName = hemuduTests;
+			productReference = 5F387B801E62DA3F004D5A82 /* hemuduTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F387B8A1E62DA3F004D5A82 /* hemuduUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F387B9A1E62DA3F004D5A82 /* Build configuration list for PBXNativeTarget "hemuduUITests" */;
+			buildPhases = (
+				5F387B871E62DA3F004D5A82 /* Sources */,
+				5F387B881E62DA3F004D5A82 /* Frameworks */,
+				5F387B891E62DA3F004D5A82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F387B8D1E62DA3F004D5A82 /* PBXTargetDependency */,
+			);
+			name = hemuduUITests;
+			productName = hemuduUITests;
+			productReference = 5F387B8B1E62DA3F004D5A82 /* hemuduUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F387B601E62DA3F004D5A82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ran Cao";
+				TargetAttributes = {
+					5F387B671E62DA3F004D5A82 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S77Q8BR4G3;
+						ProvisioningStyle = Automatic;
+					};
+					5F387B7F1E62DA3F004D5A82 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S77Q8BR4G3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F387B671E62DA3F004D5A82;
+					};
+					5F387B8A1E62DA3F004D5A82 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S77Q8BR4G3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F387B671E62DA3F004D5A82;
+					};
+				};
+			};
+			buildConfigurationList = 5F387B631E62DA3F004D5A82 /* Build configuration list for PBXProject "hemudu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F387B5F1E62DA3F004D5A82;
+			productRefGroup = 5F387B691E62DA3F004D5A82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F387B671E62DA3F004D5A82 /* hemudu */,
+				5F387B7F1E62DA3F004D5A82 /* hemuduTests */,
+				5F387B8A1E62DA3F004D5A82 /* hemuduUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F387B661E62DA3F004D5A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F387B7A1E62DA3F004D5A82 /* LaunchScreen.storyboard in Resources */,
+				5F387B771E62DA3F004D5A82 /* Assets.xcassets in Resources */,
+				5F387B751E62DA3F004D5A82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F387B7E1E62DA3F004D5A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F387B891E62DA3F004D5A82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F387B641E62DA3F004D5A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F387B6E1E62DA3F004D5A82 /* RootViewController.swift in Sources */,
+				5F387B721E62DA3F004D5A82 /* ModelController.swift in Sources */,
+				5F387B701E62DA3F004D5A82 /* DataViewController.swift in Sources */,
+				5F387B6C1E62DA3F004D5A82 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F387B7C1E62DA3F004D5A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F387B851E62DA3F004D5A82 /* hemuduTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F387B871E62DA3F004D5A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F387B901E62DA3F004D5A82 /* hemuduUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F387B821E62DA3F004D5A82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F387B671E62DA3F004D5A82 /* hemudu */;
+			targetProxy = 5F387B811E62DA3F004D5A82 /* PBXContainerItemProxy */;
+		};
+		5F387B8D1E62DA3F004D5A82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F387B671E62DA3F004D5A82 /* hemudu */;
+			targetProxy = 5F387B8C1E62DA3F004D5A82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F387B731E62DA3F004D5A82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F387B741E62DA3F004D5A82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F387B781E62DA3F004D5A82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F387B791E62DA3F004D5A82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F387B921E62DA3F004D5A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F387B931E62DA3F004D5A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F387B951E62DA3F004D5A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S77Q8BR4G3;
+				INFOPLIST_FILE = hemudu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemudu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5F387B961E62DA3F004D5A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S77Q8BR4G3;
+				INFOPLIST_FILE = hemudu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemudu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5F387B981E62DA3F004D5A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S77Q8BR4G3;
+				INFOPLIST_FILE = hemuduTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemuduTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hemudu.app/hemudu";
+			};
+			name = Debug;
+		};
+		5F387B991E62DA3F004D5A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S77Q8BR4G3;
+				INFOPLIST_FILE = hemuduTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemuduTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hemudu.app/hemudu";
+			};
+			name = Release;
+		};
+		5F387B9B1E62DA3F004D5A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = S77Q8BR4G3;
+				INFOPLIST_FILE = hemuduUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemuduUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = hemudu;
+			};
+			name = Debug;
+		};
+		5F387B9C1E62DA3F004D5A82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = S77Q8BR4G3;
+				INFOPLIST_FILE = hemuduUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemuduUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = hemudu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F387B631E62DA3F004D5A82 /* Build configuration list for PBXProject "hemudu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F387B921E62DA3F004D5A82 /* Debug */,
+				5F387B931E62DA3F004D5A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F387B941E62DA3F004D5A82 /* Build configuration list for PBXNativeTarget "hemudu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F387B951E62DA3F004D5A82 /* Debug */,
+				5F387B961E62DA3F004D5A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F387B971E62DA3F004D5A82 /* Build configuration list for PBXNativeTarget "hemuduTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F387B981E62DA3F004D5A82 /* Debug */,
+				5F387B991E62DA3F004D5A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F387B9A1E62DA3F004D5A82 /* Build configuration list for PBXNativeTarget "hemuduUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F387B9B1E62DA3F004D5A82 /* Debug */,
+				5F387B9C1E62DA3F004D5A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F387B601E62DA3F004D5A82 /* Project object */;
+}
