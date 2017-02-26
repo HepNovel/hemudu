@@ -1,0 +1,6 @@
+framework module Pods_hemudu {
+  umbrella header "Pods-hemudu-umbrella.h"
+
+  export *
+  module * { export * }
+}
