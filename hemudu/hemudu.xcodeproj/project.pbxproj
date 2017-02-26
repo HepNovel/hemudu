@@ -52,6 +52,8 @@
 		5F387BCD1E62DBB9004D5A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F387BD91E62DBD3004D5A82 /* hemudu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hemudu.entitlements; sourceTree = "<group>"; };
 		5F387BDB1E62DBE7004D5A82 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5F387BDD1E62DEC8004D5A82 /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/Main.strings"; sourceTree = "<group>"; };
+		5F387BDE1E62DEC8004D5A82 /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,7 +213,7 @@
 					5F387BA51E62DBB8004D5A82 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = S77Q8BR4G3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 1;
@@ -243,7 +245,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 5F387B9D1E62DBB8004D5A82;
@@ -332,6 +333,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5F387BB01E62DBB8004D5A82 /* Base */,
+				5F387BDD1E62DEC8004D5A82 /* zh-Hans-CN */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -340,6 +342,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5F387BB51E62DBB8004D5A82 /* Base */,
+				5F387BDE1E62DEC8004D5A82 /* zh-Hans-CN */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -387,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -418,6 +422,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -431,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -445,12 +450,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = hemudu/hemudu.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
 				DEVELOPMENT_TEAM = S77Q8BR4G3;
 				INFOPLIST_FILE = hemudu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemudu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c589eee-0d51-46a8-9817-f223e8f3b8e6";
+				PROVISIONING_PROFILE_SPECIFIER = hemudu;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -460,12 +469,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = hemudu/hemudu.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
 				DEVELOPMENT_TEAM = S77Q8BR4G3;
 				INFOPLIST_FILE = hemudu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemudu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c589eee-0d51-46a8-9817-f223e8f3b8e6";
+				PROVISIONING_PROFILE_SPECIFIER = hemudu;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -547,6 +560,7 @@
 				5F387BD21E62DBB9004D5A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F387BD31E62DBB9004D5A82 /* Build configuration list for PBXNativeTarget "hemuduTests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +569,7 @@
 				5F387BD51E62DBB9004D5A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F387BD61E62DBB9004D5A82 /* Build configuration list for PBXNativeTarget "hemuduUITests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +578,7 @@
 				5F387BD81E62DBB9004D5A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
