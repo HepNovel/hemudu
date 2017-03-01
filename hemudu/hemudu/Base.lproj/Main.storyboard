@@ -98,6 +98,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="loginDo:" destination="nes-Ps-jde" eventType="touchUpInside" id="ZCX-9C-bwX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scU-sH-1JV">
                                 <rect key="frame" x="176" y="451" width="62" height="38"/>
@@ -133,6 +136,10 @@
                             <constraint firstItem="A80-9J-Kk8" firstAttribute="leading" secondItem="BL3-D4-GlT" secondAttribute="leading" id="t4z-Bl-WPz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="BL3-D4-GlT" id="Kza-tO-S9e"/>
+                        <outlet property="username" destination="A80-9J-Kk8" id="Qe6-4F-TDO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiE-PG-JmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,7 +256,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重复密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqd-5u-VP2">
-                                <rect key="frame" x="52" y="270" width="69.333333333333343" height="21"/>
+                                <rect key="frame" x="51.999999999999993" y="270" width="69.333333333333314" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

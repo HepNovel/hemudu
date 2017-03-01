@@ -15,6 +15,13 @@ var projectiveID:Int? = nil
 var projectiveLevel:String? = nil
 
 class LoginView: UIViewController, UITextViewDelegate {
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBAction func loginDo(_ sender: Any) {
+        let Username = username.text
+        let Password = password.text
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
