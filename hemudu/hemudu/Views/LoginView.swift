@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 var projectiveUsername:String? = nil
 var projectiveAge:Int = 1
@@ -17,9 +19,15 @@ var projectiveLevel:String? = nil
 class LoginView: UIViewController, UITextViewDelegate {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBAction func loginDo(_ sender: Any) {
+    @IBAction func loginDo(sender: AnyObject) {
         let Username = username.text
         let Password = password.text
+        let url = "https://hepnovel.com/hemudu/ios/login.php"
+        let para = ["username":Username, "password":Password]
+        request(url, method: .post, parameters: para, encoding:JSONEncoding.default).responseJSON { (response) in
+            print(response.data!)
+        }
+        
         
     }
     override func viewDidLoad() {
