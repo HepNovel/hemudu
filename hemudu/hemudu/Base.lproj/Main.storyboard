@@ -90,18 +90,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzQ-FC-obs">
-                                <rect key="frame" x="176" y="389" width="62" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="62" id="jMZ-0D-dXA"/>
-                                    <constraint firstAttribute="height" constant="38" id="tB6-wi-eDA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="登录"/>
-                                <connections>
-                                    <action selector="loginDo:" destination="nes-Ps-jde" eventType="touchUpInside" id="ZCX-9C-bwX"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scU-sH-1JV">
                                 <rect key="frame" x="176" y="451" width="62" height="38"/>
                                 <constraints>
@@ -113,32 +101,58 @@
                                     <segue destination="IbF-5K-pu5" kind="presentation" id="ycr-Fb-s8l"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzQ-FC-obs">
+                                <rect key="frame" x="176" y="405" width="62" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="leJ-4t-J6o"/>
+                                    <constraint firstAttribute="width" constant="62" id="tq1-VX-BDR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="LoginBtn:" destination="nes-Ps-jde" eventType="touchUpInside" id="QcK-NV-Oy5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caa-Ew-LFf">
+                                <rect key="frame" x="134" y="363" width="147" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="3d5-V3-eu1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A80-9J-Kk8" firstAttribute="trailing" secondItem="BL3-D4-GlT" secondAttribute="trailing" id="BkR-5z-Sh1"/>
-                            <constraint firstItem="vzQ-FC-obs" firstAttribute="centerX" secondItem="TpQ-0V-m0B" secondAttribute="centerX" id="Emw-n3-ZP6"/>
+                            <constraint firstItem="caa-Ew-LFf" firstAttribute="centerX" secondItem="vzQ-FC-obs" secondAttribute="centerX" id="DKS-tN-DwH"/>
+                            <constraint firstItem="vzQ-FC-obs" firstAttribute="centerX" secondItem="TpQ-0V-m0B" secondAttribute="centerX" id="Hg2-II-Nqd"/>
                             <constraint firstItem="A80-9J-Kk8" firstAttribute="top" secondItem="TpQ-0V-m0B" secondAttribute="bottom" constant="8" symbolic="YES" id="IAR-8l-ZgV"/>
+                            <constraint firstItem="caa-Ew-LFf" firstAttribute="top" secondItem="BL3-D4-GlT" secondAttribute="bottom" constant="15" id="ITK-vz-pRt"/>
                             <constraint firstItem="A80-9J-Kk8" firstAttribute="leading" secondItem="csR-ff-bS4" secondAttribute="trailing" constant="8" symbolic="YES" id="Jcd-Az-nxU"/>
                             <constraint firstItem="csR-ff-bS4" firstAttribute="leading" secondItem="TpQ-0V-m0B" secondAttribute="leading" id="K0o-oI-HeT"/>
-                            <constraint firstItem="vzQ-FC-obs" firstAttribute="top" secondItem="BL3-D4-GlT" secondAttribute="bottom" constant="41" id="LBO-dm-UOn"/>
-                            <constraint firstItem="scU-sH-1JV" firstAttribute="top" secondItem="vzQ-FC-obs" secondAttribute="bottom" constant="24" id="UFu-Ih-S3u"/>
+                            <constraint firstItem="vzQ-FC-obs" firstAttribute="top" secondItem="caa-Ew-LFf" secondAttribute="bottom" constant="8" symbolic="YES" id="Kfi-Hx-uhO"/>
+                            <constraint firstItem="vzQ-FC-obs" firstAttribute="trailing" secondItem="scU-sH-1JV" secondAttribute="trailing" id="MlE-ws-hcU"/>
+                            <constraint firstItem="vzQ-FC-obs" firstAttribute="top" secondItem="BL3-D4-GlT" secondAttribute="bottom" constant="57" id="Mps-Pe-RgZ"/>
                             <constraint firstItem="TpQ-0V-m0B" firstAttribute="top" secondItem="xuU-um-LqA" secondAttribute="bottom" constant="98" id="X4M-aQ-fik"/>
-                            <constraint firstItem="vzQ-FC-obs" firstAttribute="leading" secondItem="scU-sH-1JV" secondAttribute="leading" id="Zbo-tk-3b9"/>
                             <constraint firstItem="csR-ff-bS4" firstAttribute="leading" secondItem="ctE-FW-3MI" secondAttribute="leading" id="au7-2I-8Ic"/>
+                            <constraint firstItem="vzQ-FC-obs" firstAttribute="leading" secondItem="scU-sH-1JV" secondAttribute="leading" id="dAW-Go-tkc"/>
                             <constraint firstItem="TpQ-0V-m0B" firstAttribute="centerX" secondItem="zyf-5h-nVc" secondAttribute="centerX" id="ehD-0n-VD0"/>
                             <constraint firstItem="A80-9J-Kk8" firstAttribute="trailing" secondItem="TpQ-0V-m0B" secondAttribute="trailing" id="fEe-qT-D7d"/>
                             <constraint firstItem="csR-ff-bS4" firstAttribute="centerY" secondItem="A80-9J-Kk8" secondAttribute="centerY" id="jMB-Sv-sTb"/>
                             <constraint firstItem="YVh-uw-uls" firstAttribute="top" secondItem="TpQ-0V-m0B" secondAttribute="bottom" constant="471" id="kHe-12-aDw"/>
                             <constraint firstItem="BL3-D4-GlT" firstAttribute="top" secondItem="A80-9J-Kk8" secondAttribute="bottom" constant="15" id="kKC-qX-4Qu"/>
-                            <constraint firstItem="vzQ-FC-obs" firstAttribute="trailing" secondItem="scU-sH-1JV" secondAttribute="trailing" id="rEa-Dn-f52"/>
+                            <constraint firstItem="scU-sH-1JV" firstAttribute="top" secondItem="vzQ-FC-obs" secondAttribute="bottom" constant="8" symbolic="YES" id="s2g-hA-aB3"/>
                             <constraint firstItem="ctE-FW-3MI" firstAttribute="centerY" secondItem="BL3-D4-GlT" secondAttribute="centerY" id="sMs-L1-3Bp"/>
                             <constraint firstItem="A80-9J-Kk8" firstAttribute="leading" secondItem="BL3-D4-GlT" secondAttribute="leading" id="t4z-Bl-WPz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="LgoinFaild" destination="caa-Ew-LFf" id="PrQ-Uk-mz8"/>
                         <outlet property="password" destination="BL3-D4-GlT" id="Kza-tO-S9e"/>
                         <outlet property="username" destination="A80-9J-Kk8" id="Qe6-4F-TDO"/>
+                        <segue destination="49e-Tb-3d3" kind="modal" identifier="login" id="sde-JV-vLM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiE-PG-JmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -311,6 +325,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sbR-2R-NS9"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
