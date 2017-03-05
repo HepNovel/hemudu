@@ -57,18 +57,25 @@ class LoginView: UIViewController, UITextFieldDelegate {
                 projectiveID = Int(String(describing: ID))
                 projectiveLevel = String(describing: level)
                 projectiveMoney = String(describing: money)
+                if projectiveLevel == "NM" {
+                    projectiveLevel = "普通会员"
+                }else if projectiveLevel == "NV" {
+                    projectiveLevel = "VIP会员"
+                }else if projectiveLevel == "SV" {
+                    projectiveLevel = "至尊VIP"
+                }
                 self.performSegue(withIdentifier: "login", sender: self)
                 if self.SavePass.isOn == true {
                     UserDefaults.standard.set(self.username.text, forKey: "n")
                     UserDefaults.standard.set(self.password.text, forKey: "p")
-
+                    
                 }
                 
             }
         }
         
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

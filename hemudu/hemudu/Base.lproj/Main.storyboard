@@ -21,13 +21,25 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXa-OF-xsi">
+                                <rect key="frame" x="120" y="237" width="175" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="Info" destination="FXa-OF-xsi" id="hDP-qq-U3q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="-631"/>
+            <point key="canvasLocation" x="918.84057971014499" y="-631.79347826086962"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -294,6 +306,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="注册"/>
+                                <connections>
+                                    <action selector="Reg:" destination="IbF-5K-pu5" eventType="touchUpInside" id="bOA-GA-mLE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye7-zr-Vfr">
                                 <rect key="frame" x="176" y="582" width="62" height="38"/>
@@ -375,6 +390,7 @@
                         <outlet property="repassword" destination="RiR-eM-0d9" id="hmp-OW-2wu"/>
                         <outlet property="sex" destination="bQe-jh-4TZ" id="Ot3-BZ-ZWz"/>
                         <outlet property="username" destination="VYT-kW-lQe" id="szZ-8Q-KzP"/>
+                        <segue destination="nes-Ps-jde" kind="modal" identifier="cReg" id="Q7s-Mo-tRJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67R-te-NKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -408,4 +424,7 @@
         <image name="hmd" width="1376" height="475"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Q7s-Mo-tRJ"/>
+    </inferredMetricsTieBreakers>
 </document>

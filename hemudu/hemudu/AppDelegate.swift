@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //registerAppNotificationSettings(launchOptions: launchOptions as [NSObject : AnyObject]?)
         return true
     }
 
@@ -40,7 +42,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+/*
+    private func registerAppNotificationSettings(launchOptions: [NSObject: AnyObject]?) {
+        if #available(iOS 10.0, *) {
+            let notifiCenter = UNUserNotificationCenter.current()
+            notifiCenter.delegate = self
+            let types = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
+            notifiCenter.requestAuthorization(options: types) { (flag, error) in
+                if flag {
+                    MPrintLog("iOS request notification success")
+                }else{
+                    MPrintLog(" iOS 10 request notification fail")
+                }
+            }
+        }
+        
+        UIApplication.shared.registerForRemoteNotifications()
+    }
+    
+    @available(iOS 10.0, *)
+    
+    func userNotificationCenter(center: UNUserNotificationCenter, willPresentNotification notification: UNNotification, withCompletionHandler completionHandler: (UNNotificationPresentationOptions) -> Void){
+        let userInfo = notification.request.content.userInfo
+        print("userInfo10:\(userInfo)")
+        completionHandler([.sound,.alert])
+        
+    }
+    
+    //iOS10新增：处理后台点击通知的代理方法
+    @available(iOS 10.0, *)
+    func userNotificationCenter(center: UNUserNotificationCenter, didReceiveNotificationResponse response: UNNotificationResponse, withCompletionHandler completionHandler: () -> Void){
+        let userInfo = response.notification.request.content.userInfo
+        print("userInfo10:\(userInfo)")
+        completionHandler()
+    }
+*/
 }
 
