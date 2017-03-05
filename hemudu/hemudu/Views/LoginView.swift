@@ -21,6 +21,7 @@ class LoginView: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var LgoinFaild: UILabel!
+    @IBOutlet weak var SavePass: UISwitch!
     @IBAction func LoginBtn(_ sender: Any) {
         let Username:String = username.text!
         let Password:String = password.text!
@@ -43,6 +44,10 @@ class LoginView: UIViewController, UITextFieldDelegate {
                 LoginSuc = false
                 print(LoginSuc)
                 self.LgoinFaild.text = "登录失败"
+                let LoginFaild = UIAlertController(title: "登录失败", message: "密码或用户名错误", preferredStyle: UIAlertControllerStyle.alert)
+                let LoginFaildCancel = UIAlertAction(title: "好的", style: UIAlertActionStyle.default, handler: nil)
+                LoginFaild.addAction(LoginFaildCancel)
+                self.present(LoginFaild, animated: true, completion: nil)
             }else {
                 LoginSuc = true
                 print(LoginSuc)
@@ -53,12 +58,13 @@ class LoginView: UIViewController, UITextFieldDelegate {
                 projectiveLevel = String(describing: level)
                 projectiveMoney = String(describing: money)
                 self.performSegue(withIdentifier: "login", sender: self)
+                if self.SavePass.isOn == true {
+                    UserDefaults.standard.set(self.username.text, forKey: "n")
+                    UserDefaults.standard.set(self.password.text, forKey: "p")
+
+                }
+                
             }
-        }
-        if LoginSuc == true {
-           
-        }else{
-            
         }
         
     }
@@ -66,6 +72,10 @@ class LoginView: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        SavePass.isOn = true
+        username.text = UserDefaults.standard.value(forKey: "n") as! String?
+        password.text = UserDefaults.standard.value(forKey: "p") as! String?
+        password.delegate=self
         
     }
     
