@@ -4,4 +4,5 @@ use_frameworks!
 target 'hemudu' do
     pod 'SwiftyJSON'
     pod 'Alamofire'
+    pod 'PermissionScope'
 end
