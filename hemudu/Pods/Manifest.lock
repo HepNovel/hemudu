@@ -1,18 +1,24 @@
 PODS:
   - Alamofire (4.3.0)
+  - JCore (1.1.1)
+  - JPush (3.0.2):
+    - JCore (= 1.1.1)
   - PermissionScope (1.1.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
+  - JPush
   - PermissionScope
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  JCore: 2210a789c8efb7dc2a46b1c24d2209b995b18ad2
+  JPush: 5d53c88e32e48b559edc3adb20ade30903a5b9e1
   PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: d2adb9ceb25018e3327d3a3a37107f8ed33699b5
+PODFILE CHECKSUM: ca5ceb1664d2b659b96917cdae24bd5522f06461
 
 COCOAPODS: 1.2.0
