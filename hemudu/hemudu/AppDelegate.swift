@@ -38,9 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         registerMessageReceive()
     }
     
-    @nonobjc func application(application:UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken:NSData) {
+    func application(application:UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken:NSData) {
         CloudPushSDK.registerDevice(deviceToken as Data!, withCallback: nil)
-        
+        print(deviceToken)
     }
     
     func application(application:UIApplication, didFailToRegisterForRemoteNotificationsWithError error:NSError) {

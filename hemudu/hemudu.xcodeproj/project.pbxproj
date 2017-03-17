@@ -8,16 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1999F2F1D3447E17D3DBA204 /* Pods_hemudu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C3AD624992577A86BA10D8 /* Pods_hemudu.framework */; };
-		5F23E24D1E755E9F00393B0F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E24C1E755E9F00393B0F /* CFNetwork.framework */; };
-		5F23E24F1E755EAD00393B0F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E24E1E755EAD00393B0F /* CoreFoundation.framework */; };
-		5F23E2511E755EBA00393B0F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E2501E755EBA00393B0F /* CoreTelephony.framework */; };
-		5F23E2531E755EC600393B0F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E2521E755EC600393B0F /* SystemConfiguration.framework */; };
-		5F23E2551E755ED300393B0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E2541E755ED300393B0F /* CoreGraphics.framework */; };
-		5F23E2571E755EDF00393B0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E2561E755EDF00393B0F /* Foundation.framework */; };
-		5F23E2591E755EEB00393B0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E2581E755EEB00393B0F /* UIKit.framework */; };
-		5F23E25B1E755EF800393B0F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E25A1E755EF800393B0F /* Security.framework */; };
 		5F23E25D1E755F0B00393B0F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E25C1E755F0B00393B0F /* libz.tbd */; };
-		5F23E25F1E755F3400393B0F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E25E1E755F3400393B0F /* UserNotifications.framework */; };
 		5F23E2611E755F5100393B0F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E2601E755F5100393B0F /* libresolv.tbd */; };
 		5F387BAA1E62DBB8004D5A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F387BA91E62DBB8004D5A82 /* AppDelegate.swift */; };
 		5F387BAC1E62DBB8004D5A82 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F387BAB1E62DBB8004D5A82 /* FirstViewController.swift */; };
@@ -30,7 +21,9 @@
 		5F387BDC1E62DBE7004D5A82 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F387BDB1E62DBE7004D5A82 /* StoreKit.framework */; };
 		5F4A14641E7974BF0098EC31 /* AlicloudUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A14611E7974BF0098EC31 /* AlicloudUtils.framework */; };
 		5F4A14651E7974BF0098EC31 /* CloudPushSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A14621E7974BF0098EC31 /* CloudPushSDK.framework */; };
-		5F4A14661E7974BF0098EC31 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A14631E7974BF0098EC31 /* UTDID.framework */; };
+		5F7CE17A1E7C134B00CB7125 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A14631E7974BF0098EC31 /* UTDID.framework */; };
+		5F7CE17B1E7C136900CB7125 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E2501E755EBA00393B0F /* CoreTelephony.framework */; };
+		5F7CE17C1E7C137B00CB7125 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E2521E755EC600393B0F /* SystemConfiguration.framework */; };
 		5F8921661E62EFF3003F2D9D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8921651E62EFF3003F2D9D /* LoginView.swift */; };
 		5F8921681E62F08C003F2D9D /* RegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8921671E62F08C003F2D9D /* RegView.swift */; };
 /* End PBXBuildFile section */
@@ -103,20 +96,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7CE17C1E7C137B00CB7125 /* SystemConfiguration.framework in Frameworks */,
+				5F7CE17B1E7C136900CB7125 /* CoreTelephony.framework in Frameworks */,
+				5F7CE17A1E7C134B00CB7125 /* UTDID.framework in Frameworks */,
 				5F23E2611E755F5100393B0F /* libresolv.tbd in Frameworks */,
 				5F4A14651E7974BF0098EC31 /* CloudPushSDK.framework in Frameworks */,
-				5F23E25F1E755F3400393B0F /* UserNotifications.framework in Frameworks */,
 				5F23E25D1E755F0B00393B0F /* libz.tbd in Frameworks */,
-				5F23E25B1E755EF800393B0F /* Security.framework in Frameworks */,
-				5F4A14661E7974BF0098EC31 /* UTDID.framework in Frameworks */,
-				5F23E2591E755EEB00393B0F /* UIKit.framework in Frameworks */,
-				5F23E2571E755EDF00393B0F /* Foundation.framework in Frameworks */,
-				5F23E2551E755ED300393B0F /* CoreGraphics.framework in Frameworks */,
-				5F23E2531E755EC600393B0F /* SystemConfiguration.framework in Frameworks */,
-				5F23E2511E755EBA00393B0F /* CoreTelephony.framework in Frameworks */,
 				5F4A14641E7974BF0098EC31 /* AlicloudUtils.framework in Frameworks */,
-				5F23E24F1E755EAD00393B0F /* CoreFoundation.framework in Frameworks */,
-				5F23E24D1E755E9F00393B0F /* CFNetwork.framework in Frameworks */,
 				5F387BDC1E62DBE7004D5A82 /* StoreKit.framework in Frameworks */,
 				1999F2F1D3447E17D3DBA204 /* Pods_hemudu.framework in Frameworks */,
 			);
