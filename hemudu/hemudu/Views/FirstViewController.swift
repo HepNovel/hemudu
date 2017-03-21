@@ -16,13 +16,13 @@ class FirstViewController: UIViewController {
     var productDict:NSMutableDictionary!
     
     
-    @IBOutlet weak var Info: UILabel!
+    //@IBOutlet weak var Info: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Info.text = "用户名：\(projectiveUsername!)\n性别：\(projectiveSex!)\n年龄：\(projectiveAge)\n会员等级:\(projectiveLevel!)\n积分：\(projectiveMoney!)"
-        Info.numberOfLines = 0
+        //Info.text = "用户名：\(projectiveUsername!)\n性别：\(projectiveSex!)\n年龄：\(projectiveAge)\n会员等级:\(projectiveLevel!)\n积分：\(projectiveMoney!)"
+        //Info.numberOfLines = 0
 
     }
 

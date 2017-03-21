@@ -26,6 +26,7 @@
 		5F7CE17C1E7C137B00CB7125 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F23E2521E755EC600393B0F /* SystemConfiguration.framework */; };
 		5F8921661E62EFF3003F2D9D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8921651E62EFF3003F2D9D /* LoginView.swift */; };
 		5F8921681E62F08C003F2D9D /* RegView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8921671E62F08C003F2D9D /* RegView.swift */; };
+		5FC150C51E7EAF9500660241 /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC150C41E7EAF9500660241 /* MineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +59,7 @@
 		5F23E25C1E755F0B00393B0F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5F23E25E1E755F3400393B0F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		5F23E2601E755F5100393B0F /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
-		5F23E2621E75614900393B0F /* JPUSHService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JPUSHService.h; path = Pods/JPush/JPUSHService.h; sourceTree = "<group>"; };
-		5F23E2641E75633800393B0F /* libjpush-ios-3.0.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libjpush-ios-3.0.2.a"; path = "Pods/JPush/libjpush-ios-3.0.2.a"; sourceTree = "<group>"; };
-		5F23E2661E75634A00393B0F /* libjcore-ios-1.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libjcore-ios-1.1.1.a"; path = "Pods/JCore/libjcore-ios-1.1.1.a"; sourceTree = "<group>"; };
 		5F23E2681E75672D00393B0F /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
-		5F23E26B1E75844600393B0F /* libjpush-ios-3.0.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libjpush-ios-3.0.2.a"; path = "hemudu/libjpush-ios-3.0.2.a"; sourceTree = "<group>"; };
-		5F23E26D1E75858C00393B0F /* jpush-ios-3.0.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jpush-ios-3.0.2.a"; path = "hemudu/jpush-ios-3.0.2.a"; sourceTree = "<group>"; };
 		5F387BA61E62DBB8004D5A82 /* hemudu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hemudu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F387BA91E62DBB8004D5A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F387BAB1E62DBB8004D5A82 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = Views/FirstViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +83,7 @@
 		5F4A14631E7974BF0098EC31 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
 		5F8921651E62EFF3003F2D9D /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = Views/LoginView.swift; sourceTree = "<group>"; };
 		5F8921671E62F08C003F2D9D /* RegView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegView.swift; path = Views/RegView.swift; sourceTree = "<group>"; };
+		5FC150C41E7EAF9500660241 /* MineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MineView.swift; path = Views/MineView.swift; sourceTree = "<group>"; };
 		78D5620BBA7A40B2B829E391 /* Pods-hemudu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hemudu.release.xcconfig"; path = "Pods/Target Support Files/Pods-hemudu/Pods-hemudu.release.xcconfig"; sourceTree = "<group>"; };
 		F8C3AD624992577A86BA10D8 /* Pods_hemudu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hemudu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,6 +167,7 @@
 				5F387BAF1E62DBB8004D5A82 /* Main.storyboard */,
 				5F8921651E62EFF3003F2D9D /* LoginView.swift */,
 				5F8921671E62F08C003F2D9D /* RegView.swift */,
+				5FC150C41E7EAF9500660241 /* MineView.swift */,
 				5F387BB21E62DBB8004D5A82 /* Assets.xcassets */,
 				5F387BB41E62DBB8004D5A82 /* LaunchScreen.storyboard */,
 				5F387BB71E62DBB8004D5A82 /* Info.plist */,
@@ -198,11 +196,6 @@
 		5F387BDA1E62DBE7004D5A82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F23E26D1E75858C00393B0F /* jpush-ios-3.0.2.a */,
-				5F23E26B1E75844600393B0F /* libjpush-ios-3.0.2.a */,
-				5F23E2661E75634A00393B0F /* libjcore-ios-1.1.1.a */,
-				5F23E2641E75633800393B0F /* libjpush-ios-3.0.2.a */,
-				5F23E2621E75614900393B0F /* JPUSHService.h */,
 				5F23E2601E755F5100393B0F /* libresolv.tbd */,
 				5F23E25E1E755F3400393B0F /* UserNotifications.framework */,
 				5F23E25C1E755F0B00393B0F /* libz.tbd */,
@@ -291,8 +284,7 @@
 				TargetAttributes = {
 					5F387BA51E62DBB8004D5A82 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = S77Q8BR4G3;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -422,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F387BAE1E62DBB8004D5A82 /* SecondViewController.swift in Sources */,
+				5FC150C51E7EAF9500660241 /* MineView.swift in Sources */,
 				5F387BAA1E62DBB8004D5A82 /* AppDelegate.swift in Sources */,
 				5F8921661E62EFF3003F2D9D /* LoginView.swift in Sources */,
 				5F387BAC1E62DBB8004D5A82 /* FirstViewController.swift in Sources */,
@@ -503,8 +496,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = hemudu/hemudu.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = S77Q8BR4G3;
@@ -529,6 +523,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "2d46909b-60e6-4803-9477-24cae50790e5";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -558,8 +553,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = hemudu/hemudu.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = S77Q8BR4G3;
@@ -577,6 +573,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "2d46909b-60e6-4803-9477-24cae50790e5";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -592,7 +589,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = hemudu/hemudu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S77Q8BR4G3;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -610,8 +607,8 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemudu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2d46909b-60e6-4803-9477-24cae50790e5";
-				PROVISIONING_PROFILE_SPECIFIER = hemudu;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = hemudu/bridge.h;
 				SWIFT_VERSION = 3.0;
 				VALID_ARCHS = "arm64 armv7s armv7";
@@ -625,7 +622,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = hemudu/hemudu.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ran Cao (S77Q8BR4G3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S77Q8BR4G3;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -643,8 +640,8 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hepnovel.hemudu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2d46909b-60e6-4803-9477-24cae50790e5";
-				PROVISIONING_PROFILE_SPECIFIER = hemudu;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = hemudu/bridge.h;
 				SWIFT_VERSION = 3.0;
 				VALID_ARCHS = "arm64 armv7s armv7";
